@@ -17,7 +17,7 @@ LINK_TIME_OPT = 1
 # Can be pointed to a newer version if desired
 #TIVAWARE_LIB = /mnt/c/ti/TivaWare
 #TIVAWARE_LIB = /home/raphael/ti/tivaware
-TIVAWARE_LIB = /home/micropython/ti/tivaware
+TIVAWARE_LIB = /micropython_workspace/micropython/lib
 
 # Name of the Project (and the resulting binary file)
 PROJECT_NAME = uPY_TM4C123

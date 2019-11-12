@@ -89,7 +89,7 @@
 #include "inc/hw_ints.h"
 #include "inc/hw_uart.h"
 #include "inc/hw_nvic.h"
-#include "inc/hw_memmap.h"
+#include "inc/hw_memmap.h" 
 #include "inc/hw_hibernate.h"
 #include "driverlib/sysctl.h"
 #include "driverlib/systick.h"
@@ -166,7 +166,7 @@ void nlr_jump_fail(void *val) {
 void MP_WEAK __assert_func(const char *file, int line, const char *func, const char *expr) {
     (void)func;
     printf("Assertion '%s' failed, at file %s:%d\n", expr, file, line);
-    __fatal_error("");
+    __fatal_error(""); 
 }
 #endif
 

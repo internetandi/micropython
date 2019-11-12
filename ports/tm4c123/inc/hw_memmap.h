@@ -2,7 +2,39 @@
 //
 // hw_memmap.h - Macros defining the memory map of the device.
 //
-// Modified version to prevent mutiple defined values
+// Copyright (c) 2005-2017 Texas Instruments Incorporated.  All rights reserved.
+// Software License Agreement
+// 
+//   Redistribution and use in source and binary forms, with or without
+//   modification, are permitted provided that the following conditions
+//   are met:
+// 
+//   Redistributions of source code must retain the above copyright
+//   notice, this list of conditions and the following disclaimer.
+// 
+//   Redistributions in binary form must reproduce the above copyright
+//   notice, this list of conditions and the following disclaimer in the
+//   documentation and/or other materials provided with the  
+//   distribution.
+// 
+//   Neither the name of Texas Instruments Incorporated nor the names of
+//   its contributors may be used to endorse or promote products derived
+//   from this software without specific prior written permission.
+// 
+// THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+// "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+// LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+// A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+// OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+// SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+// LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+// DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+// THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+// (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+// OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+// 
+// This is part of revision 2.1.4.178 of the Tiva Firmware Development Package.
+//
 //*****************************************************************************
 
 #ifndef __HW_MEMMAP_H__
@@ -110,10 +142,10 @@
 #define DES_BASE                0x44038000  // Data Encryption Standard
                                             // Accelerator (DES)
 #define LCD0_BASE               0x44050000  // LCD Controller
-// #define ITM_BASE                0xE0000000  // Instrumentation Trace Macrocell
-// #define DWT_BASE                0xE0001000  // Data Watchpoint and Trace
+#define ITM_BASE                0xE0000000  // Instrumentation Trace Macrocell
+#define DWT_BASE                0xE0001000  // Data Watchpoint and Trace
 #define FPB_BASE                0xE0002000  // FLASH Patch and Breakpoint
-// #define NVIC_BASE               0xE000E000  // Nested Vectored Interrupt Ctrl
+#define NVIC_BASE               0xE000E000  // Nested Vectored Interrupt Ctrl
 #define TPIU_BASE               0xE0040000  // Trace Port Interface Unit
 
 #endif // __HW_MEMMAP_H__
